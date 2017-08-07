@@ -1,0 +1,210 @@
+html {
+  font-size: 18px;
+}
+header {
+  width:100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.logo {
+
+  background-color: inherit;;
+  text-transform: uppercase;
+  color: white;
+  display:flex;
+  align-items:center;
+  width:960px;
+
+
+}
+.logo img {
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: 0px;
+  height:1.5rem;
+}
+.logo h1 {
+
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin: 0px;
+  padding-left: 0.5rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
+#bigphoto {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:25em;
+  display:flex;
+  justify-content: center;
+}
+.logo .bbox h1{
+  font-weight: bold;
+  padding:0px 0px 0.25rem;
+}
+.logo .bbox span{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+.bbox {
+  background-color: black;
+  color: white;
+  top: 9rem;
+  width: 20rem;
+  padding:2rem 3rem;
+}
+nav{
+  display:flex;
+  background-color: firebrick;
+  justify-content: center;
+}
+ul {
+  display:flex;
+  justify-content: space-around;
+  background-color: inherit;;
+  color:white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width:960px;
+}
+#menu {
+  display: none;
+}
+.products {
+  display:flex;
+  justify-content: center;
+}
+.limit {
+  width:960px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+
+}
+.prbox {
+  border:4px solid black;
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.photo {
+  padding:2rem 0;
+  height:9rem;
+
+}
+
+img {
+  max-width: 8em;
+  object-fit: contain;
+}
+
+.name {
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: black;
+  width: 100%;
+  color:white;
+  text-align: center;
+
+}
+.lochours {
+  display:flex;
+  justify-content: center;
+}
+.lochoursdata {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-bottom: 4rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 5rem;
+  color:white;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px){
+  .prbox {
+    width:45%;
+  }
+  #pr3{
+    display:none;
+  }
+  .fulldisplay {
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .limit {
+    width:100%;
+
+    flex-direction: column;
+    align-items: center;
+  }
+  .prbox {
+    width:90%;
+  }
+  #pr3 {
+    display:none;
+  }
+  #pr2{
+    display:none;
+  }
+  .fulldisplay {
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .logo .bbox span{
+
+    font-size: 0,77rem;
+  }
+
+
+  .bbox {
+    font-size: 1rem;
+    top: 10rem;
+    width: 20rem;
+    padding:1rem 2rem;
+  }
+  #bigphoto {
+    height:15em;
+  }
+  .lochoursdata {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+  footer {
+    margin-top: 4rem;
+  }
+  footer div span {
+    text-align: center;
+  }
+}
